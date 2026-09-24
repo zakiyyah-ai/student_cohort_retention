@@ -64,7 +64,7 @@ student-cohort-retention-dashboard/
    started the course.
 4. **Retention %**: active students in week *N* ÷ total cohort size.
 
-Full logic lives in [`build_cohort_retention.py`](./build_cohort_retention.py).
+Full logic lives in [`Student_Cohort_Retention.ipynb`](./Student_Cohort_Retention.ipynb)
 
 ## Running the ETL yourself
 
