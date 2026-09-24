@@ -48,7 +48,6 @@ Raw files used: `courses.csv`, `studentInfo.csv`, `studentRegistration.csv`,
 student-cohort-retention-dashboard/
 ├── build_cohort_retention.py   # ETL: raw OULAD CSVs -> cohort retention table
 ├── cohort_retention.csv        # Output: cohort x week x retention%, ready for BI tools
-├── StudentCohortRetention.twbx # Tableau packaged workbook
 └── README.md
 ```
 
