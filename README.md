@@ -46,8 +46,8 @@ Raw files used: `courses.csv`, `studentInfo.csv`, `studentRegistration.csv`,
 
 ```
 student-cohort-retention-dashboard/
-├── build_cohort_retention.py   # ETL: raw OULAD CSVs -> cohort retention table
-├── cohort_retention.csv        # Output: cohort x week x retention%, ready for BI tools
+├── Student_Cohort_Retention.ipynb   # ETL: raw OULAD CSVs -> cohort retention table
+├── cohort_retention.csv             # Output: cohort x week x retention%, ready for BI tools
 └── README.md
 ```
 
@@ -68,11 +68,12 @@ Full logic lives in [`Student_Cohort_Retention.ipynb`](./Student_Cohort_Retentio
 
 ## Running the ETL yourself
 
+Open [`Student_Cohort_Retention.ipynb`](./Student_Cohort_Retention.ipynb) in
+Jupyter or Google Colab, point `data_dir` in the first cell at a folder
+containing the 4 OULAD CSVs above, and run all cells.
+
 ```bash
 pip install pandas
-
-# Point --data-dir at a folder containing the 4 OULAD CSVs above
-python build_cohort_retention.py --data-dir ./oulad_csv --out cohort_retention.csv
 ```
 
 Output columns: `code_module`, `code_presentation`, `cohort_label`,
